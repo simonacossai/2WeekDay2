@@ -1,11 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week2-Day2</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+     
+    <nav class="navbar navbar-dark" style="background-color: #4C061D!important;">
+        
+        <a class="navbar-brand" href="#">
+          <img src="https://www.iconsdb.com/icons/preview/white/procent-badge-xxl.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          <h1 class="brandName" onmouseleave="removeClassFromTitle()" onmouseover="addClassToTitle()">Amazona</h1>
+        </a>
+        
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-</body>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactUs">Contact us</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+      <table class="image-table" id="products">
+        <tbody>
+         <tr>
+          <td>
+            <h2 class="productTitle">Best products</h2>
+        
+            <div class="card-group" id="card-group">
+                <div class="card">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Brown bag</h5>
+                    <p class="card-text">casualbag, medium size. Great for students</p>
+                    <p>20$</p>
+                    <a href="https://www.amazon.it/TcIFE-Borse-Donna-Tracolla-Borsetta/dp/B07QRHBFD7/ref=redir_mobile_desktop?ie=UTF8&aaxitk=SFIhLc5J59UfHkBmZRJAdQ&hsa_cr_id=1234990480902&ref_=sbx_be_s_sparkle_tsld_asin_0" class="btn btn-primary amazon" target="_blank">Details</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://images.unsplash.com/photo-1528575950036-63c4853d3f6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Elegant bag</h5>
+                    <p class="card-text">elegant bag for special events</p>
+                  <p>50$</p>
+                  <a href="https://www.amazon.it/TcIFE-Borse-Donna-Tracolla-Borsetta/dp/B07QRHBFD7/ref=redir_mobile_desktop?ie=UTF8&aaxitk=SFIhLc5J59UfHkBmZRJAdQ&hsa_cr_id=1234990480902&ref_=sbx_be_s_sparkle_tsld_asin_0" class="btn btn-primary amazon" target="_blank">Details</a>
+
+                  </div>
+                </div>
+                <div class="card">
+                  <img class="card-img-top" src="https://images.unsplash.com/photo-1528976915572-6a0cf746802e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Backpack</h5>
+                    <p class="card-text">Backpack perfect for the back to school</p>
+                 <p>34$</p>
+                 <a href="https://www.amazon.it/TcIFE-Borse-Donna-Tracolla-Borsetta/dp/B07QRHBFD7/ref=redir_mobile_desktop?ie=UTF8&aaxitk=SFIhLc5J59UfHkBmZRJAdQ&hsa_cr_id=1234990480902&ref_=sbx_be_s_sparkle_tsld_asin_0" class="btn btn-primary  amazon" target="_blank">Details</a>
+
+                  </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://images.unsplash.com/photo-1479219136056-56bb6495a005?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Clutch</h5>
+                      <p class="card-text">Very unusual model of bag, little vintage</p>
+                     <p>41,99$</p>
+                     <a href="https://www.amazon.it/TcIFE-Borse-Donna-Tracolla-Borsetta/dp/B07QRHBFD7/ref=redir_mobile_desktop?ie=UTF8&aaxitk=SFIhLc5J59UfHkBmZRJAdQ&hsa_cr_id=1234990480902&ref_=sbx_be_s_sparkle_tsld_asin_0" class="btn btn-primary amazon" target="_blank">Details</a>
+
+                    </div>
+                  </div>
+              </div>
+
+           </td>
+         </tr>
+        </tbody>
+       </table>
+
+       <section id="contactUs">
+           <div class="contact">
+               <h2>Contact us</h2>
+               <input type="text" placeholder="Name" id="name"/>
+               <input type="email" placeholder="Email" id="email"/>
+               <input type="text" placeholder="ask your question here" id="message"/>
+               <button type="submit" class="submitButton" id="submitButton" onClick="sendData()">Submit</button>
+           </div>
+       </section>
+ 
+       <section id="exercise">
+        <h2 id="listTitle">Todo List</h2>
+        <ul id="firstList">
+            <li><p>1st</p></li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+        <ul id="secondList">
+            <li>1st</li>
+            <li>2nd</li>
+            <li>3rd</li>
+        </ul>
+        <input type="text" placeholder="new title" id="newTitle">
+        <div>
+            <p>This text is just for the exercise</p>
+        </div>
+        <button onclick="changeListTitle()">Change</button>
+        <button  onclick="changePContent()">Click to change p</button>
+       </section>
+     <!--<p>HELLO I'M NOT CHANGING BECAUSE I'M NOT A CHILD OF A DIV</p>-->
+
+
+       <footer class="footer">
+        <div class="container">
+          <div class="about-us">
+            <h2 style="color:white">You can find us here:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.913624040803!2d14.49737181527123!3d40.82986087931916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133bba96bb7f90c1%3A0xc4a70856dc550bf6!2sVia%20Torricelli%2C%2080047%20San%20Giuseppe%20NA!5e0!3m2!1sit!2sit!4v1601905938932!5m2!1sit!2sit" 
+            width="270" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           
+
+          </div>
+    
+    
+          <div class="follow">
+              <h3>Amazona shop</h3>
+            <h3 id="address">Via Torriccelli, 97</h3>
+            <h3 style="color:#fff;  margin-top: 30px; font-weight: bold;">For info:</h3>
+            <a href="tel:333 4445679" class="call">
+              <h5 style="color:#fff;">333 4445679</h5>
+            </a>
+          </div>
+        </div>
+      </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
