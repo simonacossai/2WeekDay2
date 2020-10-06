@@ -28,20 +28,6 @@
 
     /* EXERCISE 4
         Add the following html snippet to your page:
-            <h2 id="listTitle">Todo List</h2>
-            <ul id="firstList">
-                <li><p>1st</p></li>
-                <li>2nd</li>
-                <li>3rd</li>
-            </ul>
-            <ul id="secondList">
-                <li>1st</li>
-                <li>2nd</li>
-                <li>3rd</li>
-            </ul>
-            <div>
-                <p>This text is just for the exercise</p>
-            </div>
     Write a function to change the text of only the p which are child of a div (execute the function by assigning it to a button's click event)
     */
     const changePContent = function () {
@@ -56,16 +42,23 @@
         Write a function to change the list title (you can use previous day's 
         textarea as input or create a new text input field to grab the content)
     */
-   let content= document.querySelector('#newTitle').value;
-    const changeListTitle = function (content) {
+    const changeListTitle = function () {
+        let content= document.querySelector('#newTitle');
         let listTitle= document.querySelector('#listTitle');
-        listTitle.innerText= content;
-
+        listTitle.innerText= content.value;
     };
+
+
     /* EXERCISE 6
          Write a function to add a new item ONLY to the second list (create an input field + add button)
     */
-    const addToTheSecond = function (content) {};
+    const addToTheSecond = function () {
+        let content= document.querySelector('#newTitle');
+        let myList = document.querySelector('#secondList');
+        let listItem= document.createElement("li");
+        listItem.innerText = content.value;
+        myList.appendChild(listItem);   
+    };
     /* EXERCISE 7
         Write a function to make the first UL disappear (button)
     */
