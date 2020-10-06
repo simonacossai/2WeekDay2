@@ -8,7 +8,7 @@
         Write a function to change the Title of the page in something else (execute the function in browser console)
     */
     const changeTitle = function (newTitle) {
-      let title= document.querySelector('.brandName');
+      let title= document.querySelector('title');
       title.innerText= newTitle;
     };
     /* EXERCISE 3a
@@ -62,29 +62,50 @@
     /* EXERCISE 7
         Write a function to make the first UL disappear (button)
     */
-    const firstUlDisappear = function () {};
+    const firstUlDisappear = function () {
+        let firstList = document.querySelector('#firstList');
+        firstList.remove();
+    };
+
     /* EXERCISE 8
         Write a function to make the background of every UL green (button)
     */
-    const paintItGreen = function () {};
+    const paintItGreen = function () {
+        let firstList = document.querySelector('#firstList');
+        let secondList = document.querySelector('#secondList');
+
+        firstList.style.backgroundColor= "green";
+        secondList.style.backgroundColor= "green";
+    };
   
     /* EXERCISE 9
         Add a "magnifier function" to the table.
         When the user mouse goes on a table cell (not the image one) the font size must increase.
         HINT use mouseenter / mouseleave events
     */
-    const makeThemMagnifiable = function () {};
+    const makeThemMagnifiable = function () {
+        
+    };
     /* EXERCISE 10
         Add a button to toggle all the product images (toggle => if visible, hide, if not visible, show)
     */
-    const toggleShowImages = function () {};
-  
+    const toggleShowImages = function () {
+        let image = document.querySelector('./tableImage');
+        for(let i=0; i<image.length; i++){
+            image[i].style.display="none";
+        }
+    };
     //##### EXTRA
   
     /* EXERCISE 11
         Make the heading of the page change color radomly every time the user clicks on it
         */
-    const makeItClickable = function () {};
+    const makeItClickable = function () {
+        var allchar="0123456789ABCDEF";
+        let title= document.querySelector('.productTitle');
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);     
+        title.style.color = "#" + randomColor;
+    };
   
     /*EXERCISE 12
       Refactor your HTML code with HTML5 semantic tags such as header, section, footer, etc

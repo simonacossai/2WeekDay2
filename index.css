@@ -104,6 +104,9 @@ input{
     color:#fff;
     
 }
+.card{
+    width:300px;
+}
 .amazon{
     background-color: #4C061D;
     border-color: #4C061D;
@@ -131,15 +134,26 @@ input{
         width: 250px;
         height: 250px;
     }
+    td{
+        display:block;
+        width: 200px;
+    }
+    
     footer.footer .container{
         grid-template-columns: repeat(1, 1fr);
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
     }
-
-    .card{
-        width: 300px;
+    
+table{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+    .card {
+        width: 230px;
         text-align: center;
         align-items: center;
         padding: 20px;
