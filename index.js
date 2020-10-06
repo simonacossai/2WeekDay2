@@ -71,8 +71,8 @@
         Write a function to make the background of every UL green (button)
     */
     const paintItGreen = function () {
-        let firstList = document.querySelector('#firstList');
-        let secondList = document.querySelector('#secondList');
+        let firstList = document.querySelectorAll('#firstList');
+        let secondList = document.querySelectorAll('#secondList');
 
         firstList.style.backgroundColor= "green";
         secondList.style.backgroundColor= "green";
@@ -84,16 +84,23 @@
         HINT use mouseenter / mouseleave events
     */
     const makeThemMagnifiable = function () {
-        
+        let tableCell = document.querySelectorAll('td');
+        for(let i=0; i<tableCell.length; i++){       
+            tableCell[i].style.fontSize="30px";   
+    }
     };
     /* EXERCISE 10
         Add a button to toggle all the product images (toggle => if visible, hide, if not visible, show)
     */
     const toggleShowImages = function () {
-        let image = document.querySelector('./tableImage');
+        let image = document.querySelectorAll('.tableImage');
         for(let i=0; i<image.length; i++){
+            if(image[i].style.display==="none"){
+            image[i].style.display="block";
+           }else{
             image[i].style.display="none";
         }
+    }
     };
     //##### EXTRA
   
